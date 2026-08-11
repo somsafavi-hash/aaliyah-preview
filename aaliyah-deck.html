@@ -87,6 +87,14 @@ h2.h em{font-style:normal;color:var(--rose-lite);}
 .card .ic.a{background:rgba(217,164,65,.1);border-color:rgba(217,164,65,.25);color:var(--amber);}
 .card .ic.b{background:rgba(109,132,194,.12);border-color:rgba(109,132,194,.28);color:var(--blue);}
 
+/* dense capabilities grid (Part 1) */
+.slide[data-label="What she can do"] h2.h{font-size:clamp(23px,3.5vw,39px);line-height:1.04;}
+.grid.caps{margin-top:11px;gap:8px 13px;}
+.grid.caps .card{padding:11px 14px;}
+.grid.caps .ct{font-size:clamp(13.5px,1.4vw,15.5px);margin-bottom:4px;gap:8px;}
+.grid.caps .cd{font-size:clamp(11px,1.15vw,13px);line-height:1.36;}
+.slide[data-label="What she can do"] .kicker{margin-top:11px;font-size:clamp(13px,1.4vw,16px);}
+
 /* status board (what's live) */
 .stier{display:flex;flex-direction:column;}
 .stier .sh{display:flex;align-items:center;gap:9px;font-size:clamp(13px,1.4vw,16.5px);font-weight:600;margin-bottom:14px;}
@@ -212,6 +220,24 @@ h2.h em{font-style:normal;color:var(--rose-lite);}
     </div>
   </section>
 
+  <!-- 1b · WHAT SHE CAN DO (PART 1) -->
+  <section class="slide" data-label="What she can do">
+    <div class="inner">
+      <div class="eyebrow reveal">Part 1 · 34 tools, explained simply</div>
+      <h2 class="h reveal">What Aaliyah <em>can do.</em></h2>
+      <div class="grid g2 caps">
+        <div class="card reveal"><div class="ct">📧 Email &amp; communication</div><p class="cd">Reads and searches your whole inbox, drafts replies in your voice, forwards attachments. Every outbound email is a <b style="color:var(--bond)">draft until you approve it</b> — she can't send on her own.</p></div>
+        <div class="card reveal"><div class="ct">📅 Calendar</div><p class="cd">Checks your schedule, finds open slots, books meetings, reschedules, and sends invites — on your real Google Calendar.</p></div>
+        <div class="card reveal"><div class="ct">📄 Legal work product</div><p class="cd">Reads contracts (PDFs, attachments, forwarded email) → plain-English summaries: parties, term, territory, money, red flags. Compares two versions clause-by-clause. Drafts from your templates and clause bank of your own executed deals.</p></div>
+        <div class="card reveal"><div class="ct">🗂 Practice management</div><p class="cd">Tracks every matter — status, next step, deadline — and flags what's overdue or gone quiet. Tracks revenue &amp; expenses, builds charts on demand, and emails you a morning digest.</p></div>
+        <div class="card reveal"><div class="ct">📑 Documents</div><p class="cd">Generates letterhead-ready PDFs, spreadsheets, and decks — invoices, engagement letters, memos, reports — named consistently and filed automatically.</p></div>
+        <div class="card reveal"><div class="ct">🎵 Talent sourcing &amp; outreach</div><p class="cd">Finds rising artists to your criteria, digs up public booking/management contacts, keeps a pipeline (prospect → contacted → in discussion → signed). At scale she assembles the list and messaging — <b style="color:var(--bond)">you approve both, separately</b> — then sends, tracks replies, and honors opt-outs forever.</p></div>
+        <div class="card reveal"><div class="ct">🔒 Built-in guarantees</div><p class="cd">Private US cloud. No training on your data. Unknown senders get nothing. Anything touching a client or money is <b style="color:var(--bond)">draft-first, always.</b></p></div>
+      </div>
+      <p class="kicker reveal">Reach her anywhere — <b>text, WhatsApp, voice note, phone call, web app,</b> or forward an email to her private alias.</p>
+    </div>
+  </section>
+
   <!-- 2 · PROBLEM -->
   <section class="slide" data-label="Every draft starts near-zero">
     <div class="inner">
@@ -227,25 +253,10 @@ h2.h em{font-style:normal;color:var(--rose-lite);}
     </div>
   </section>
 
-  <!-- 4 · LEGAL -->
-  <section class="slide" data-label="Legal work">
-    <div class="inner">
-      <div class="eyebrow reveal"><span class="num">02 · Domain one</span> Legal work</div>
-      <h2 class="h reveal">From term sheet to <em>signature-ready draft.</em></h2>
-      <div class="grid g2" style="margin-top:22px">
-        <div class="card reveal"><div class="ct"><span class="ic">▤</span>Ingest &amp; summarize</div><p class="cd">Forward a 40-page recording agreement → a one-page plain-English summary plus the six terms that actually bite.</p></div>
-        <div class="card reveal"><div class="ct"><span class="ic">✎</span>Draft from a term sheet, in your voice</div><p class="cd">Term sheet in → a full agreement built from <b style="color:var(--bond)">your</b> template in ~2 minutes, with missing terms flagged <span style="font-family:var(--mono);color:var(--amber)">[TO COME]</span> rather than guessed.</p></div>
-        <div class="card reveal"><div class="ct"><span class="ic">⇄</span>Compare versions &amp; redline</div><p class="cd">Their markup vs. your last draft → a clean redline and a note on every substantive change, so nothing slips past.</p></div>
-        <div class="card reveal"><div class="ct"><span class="ic g">◆</span>A clause bank that learns</div><p class="cd">Every executed deal you feed her makes the next draft faster and more like you — your language, your positions, reused.</p></div>
-      </div>
-      <p class="kicker reveal">She will <b>never invent a citation or a clause.</b> When she's unsure, she says so.</p>
-    </div>
-  </section>
-
-  <!-- 6 · OPERATIONS -->
+  <!-- 5 · OPERATIONS -->
   <section class="slide" data-label="Operations">
     <div class="inner">
-      <div class="eyebrow reveal"><span class="num">03 · Domain two</span> Operations</div>
+      <div class="eyebrow reveal"><span class="num">02</span> Operations</div>
       <h2 class="h reveal">The back office, <em>handled.</em></h2>
       <div class="grid g3" style="margin-top:22px">
         <div class="card reveal"><div class="ct">Outbound email &amp; client docs</div><p class="cd">Drafted from your templates and tone — waiting for your OK, never sent blind.</p></div>
@@ -261,7 +272,7 @@ h2.h em{font-style:normal;color:var(--rose-lite);}
   <!-- 7 · OUTREACH -->
   <section class="slide" data-label="Talent outreach">
     <div class="inner">
-      <div class="eyebrow reveal"><span class="num">04 · Domain three</span> Talent sourcing &amp; outreach</div>
+      <div class="eyebrow reveal"><span class="num">03</span> Talent sourcing &amp; outreach</div>
       <h2 class="h reveal">At scale — <em>under your hand.</em></h2>
       <p class="lede reveal">The loop is built so volume never means losing control:</p>
       <div class="xc reveal" style="margin-top:22px">
@@ -277,7 +288,7 @@ h2.h em{font-style:normal;color:var(--rose-lite);}
   <!-- 9 · TONE & VOICE -->
   <section class="slide" data-label="Her voice">
     <div class="inner">
-      <div class="eyebrow reveal"><span class="num">05</span> Her voice</div>
+      <div class="eyebrow reveal"><span class="num">04</span> Her voice</div>
       <h2 class="h reveal">She writes in <em>your</em> voice — not a robot's.</h2>
       <p class="lede reveal">Her default isn't "AI assistant." It's you — the way you'd actually put it to that reader.</p>
       <div class="grid g3" style="margin-top:16px">
@@ -297,7 +308,7 @@ h2.h em{font-style:normal;color:var(--rose-lite);}
   <!-- 10 · V1 SCOPE -->
   <section class="slide" data-label="Day one">
     <div class="inner">
-      <div class="eyebrow reveal"><span class="num">06</span> August 25 — day one</div>
+      <div class="eyebrow reveal"><span class="num">05</span> August 25 — day one</div>
       <h2 class="h reveal">What you'll have <em>on launch.</em></h2>
       <p class="lede reveal">A conservative, real v1 — the highest-value legal core, working in production.</p>
       <div class="grid g2" style="margin-top:20px">
@@ -314,7 +325,7 @@ h2.h em{font-style:normal;color:var(--rose-lite);}
   <!-- 11 · USE-CASE GALLERY -->
   <section class="slide" data-label="Use cases">
     <div class="inner">
-      <div class="eyebrow reveal"><span class="num">07</span> In practice</div>
+      <div class="eyebrow reveal"><span class="num">06</span> In practice</div>
       <h2 class="h reveal">You say it. She drafts it. <em>You approve it.</em></h2>
       <div class="grid g3" style="margin-top:20px">
         <div class="card reveal"><p class="cd" style="color:var(--rose-lite);font-family:var(--mono);font-size:12px;margin-bottom:8px">LEGAL</p><p class="cd" style="color:var(--bond)">“Turn this term sheet into a full producer agreement.”</p></div>
@@ -333,7 +344,7 @@ h2.h em{font-style:normal;color:var(--rose-lite);}
   <!-- 13 · FAQ -->
   <section class="slide" data-label="Questions">
     <div class="inner">
-      <div class="eyebrow reveal"><span class="num">08</span> Questions you're probably asking</div>
+      <div class="eyebrow reveal"><span class="num">07</span> Questions you're probably asking</div>
       <h2 class="h reveal">The honest answers.</h2>
       <div class="faq reveal">
         <div class="qa"><p class="q">Is our client data safe?</p><p class="a"><b>Yes.</b> It runs in the firm's own private cloud, encrypted in transit and at rest, and is <b>never used to train any AI model.</b> Region-pinned for residency.</p></div>
